@@ -16,7 +16,7 @@ variable "location" {
   type        = string
 }
 
-variable "version" {
+variable "mssql_server_version" {
   description = "(Required) The version for the new server. Valid values are: 2.0 (for v11 server) and 12.0 (for v12 server). Changing this forces a new resource to be created."
   type        = string
 }

@@ -7,7 +7,7 @@ resource "azurerm_mssql_server" "mssql_server" {
   name                         = var.name
   resource_group_name          = var.resource_group_name
   location                     = var.location
-  version                      = var.version
+  version                      = var.mssql_server_version
   administrator_login          = var.azuread_administrator.azuread_authentication_only != true ? var.administrator_login : null
   administrator_login_password = var.azuread_administrator.azuread_authentication_only != true ? var.administrator_login_password : null
 
